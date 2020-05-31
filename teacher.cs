@@ -8,5 +8,8 @@ namespace TSSP_V3
 {
     class teacher
     {
+        string Family;
+        string Name;
+        string Password;
     }
 }
