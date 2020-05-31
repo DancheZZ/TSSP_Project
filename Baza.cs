@@ -52,9 +52,9 @@ namespace TSSP_V3
             return false;
         }
 
-        public static  parents GetParents()
+        public static  parents GetParents(int ID)
         {
-
+            return Rodoki[ID];
         }
 
     }
