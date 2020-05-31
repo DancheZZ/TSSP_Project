@@ -30,7 +30,7 @@
       FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Width="400" Height="33" Margin="18,19.2,18.8,19.8" Grid.ColumnSpan="2"/>
 
         <TextBlock VerticalAlignment="Bottom" FontSize="30" Foreground="DarkGray" 
-        FontFamily="Arial" Grid.Row="2" HorizontalAlignment="Center" Margin="94,0,158.8,71.6" Grid.RowSpan="2" Grid.Column="1" Width="128">Фамилия</TextBlock>
+        FontFamily="Arial" Grid.Row="2" HorizontalAlignment="Center" Margin="93,0,154.8,71.6" Grid.RowSpan="2" Grid.Column="1" Width="133">Фамилия</TextBlock>
 
         <TextBox x:Name ="Фамилия" Grid.Row="3" MaxLength="30" TextAlignment="Center" Background="SkyBlue"
       FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Width="400" Height="33" Margin="18,19.4,18.8,19.6" Grid.ColumnSpan="2"/>

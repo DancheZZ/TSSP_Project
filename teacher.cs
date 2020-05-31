@@ -15,7 +15,7 @@ namespace TSSP_V3
      Возраст
      Предмет */
         public static int CountTeachers = 300;
-        int ID;
+    public int ID;
         string Family;
         string Name;
         string Password;
@@ -57,6 +57,21 @@ namespace TSSP_V3
         public void WriteNote() //параметры для записки родителю
         {
 
+        }
+
+        public string ReturnName()
+        {
+            return Name;
+        }
+
+        public string ReturnFamily()
+        {
+            return Family;
+        }
+
+        public string ReturnPassword()
+        {
+            return Password;
         }
 
     }

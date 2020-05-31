@@ -15,7 +15,7 @@ namespace TSSP_V3
         char gender;
         string Class;
         int ID_ClassRuk;
-        int ID;
+        public int ID;
         student
         (
         string _Family,
@@ -47,5 +47,24 @@ namespace TSSP_V3
         {
 
         }
+
+        public string ReturnName()
+        {
+            return Name;
+        }
+
+      
+        public string ReturnFamily()
+        {
+            return Family;
+        }
+
+        
+
+        public string ReturnPassword()
+        {
+            return Password;
+        }
+
     }
 }
