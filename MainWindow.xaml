@@ -5,9 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TSSP_V3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="534.307" Width="446.506">
+        Background="DarkRed"
+        Title="Регистрация" HorizontalAlignment="Center" Height="534.307" Width="446.506">
     <Grid Margin="0,0,3.6,-0.4">
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="56*"/>
+            <ColumnDefinition Width="381*"/>
+        </Grid.ColumnDefinitions>
+
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
@@ -18,26 +23,26 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <TextBlock VerticalAlignment="Bottom" FontSize="20" 
-        FontFamily="Arial" Grid.Row="0" HorizontalAlignment="Center">Имя</TextBlock>
+        <TextBlock VerticalAlignment="Bottom" FontSize="30" Foreground="DarkGray" 
+        FontFamily="Arial" Grid.Row="0" HorizontalAlignment="Center" Margin="133,0,182.8,71.8" Grid.RowSpan="2" Grid.Column="1" Width="65">Имя</TextBlock>
 
-        <TextBox x:Name ="Имя" Grid.Row="1" MaxLength="30" TextAlignment="Center" 
-      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Width="400" Height="33"/>
+        <TextBox x:Name ="Имя" Grid.Row="1" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
+      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Width="400" Height="33" Margin="18,19.2,18.8,19.8" Grid.ColumnSpan="2"/>
 
-        <TextBlock VerticalAlignment="Bottom" FontSize="20" 
-        FontFamily="Arial" Grid.Row="2" HorizontalAlignment="Center">Фамилия</TextBlock>
+        <TextBlock VerticalAlignment="Bottom" FontSize="30" Foreground="DarkGray" 
+        FontFamily="Arial" Grid.Row="2" HorizontalAlignment="Center" Margin="94,0,158.8,71.6" Grid.RowSpan="2" Grid.Column="1" Width="128">Фамилия</TextBlock>
 
-        <TextBox x:Name ="Фамилия" Grid.Row="3" MaxLength="30" TextAlignment="Center" 
-      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Width="400" Height="33"/>
+        <TextBox x:Name ="Фамилия" Grid.Row="3" MaxLength="30" TextAlignment="Center" Background="SkyBlue"
+      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Width="400" Height="33" Margin="18,19.4,18.8,19.6" Grid.ColumnSpan="2"/>
 
-        <TextBlock VerticalAlignment="Bottom" FontSize="20" 
-        FontFamily="Arial" Grid.Row="4" HorizontalAlignment="Center">Пароль</TextBlock>
+        <TextBlock VerticalAlignment="Bottom" FontSize="30"   Foreground="DarkGray" 
+        FontFamily="Arial" Grid.Row="4" HorizontalAlignment="Center" Margin="111,0,158.8,0.4" Grid.Column="1" Width="111">Пароль</TextBlock>
 
-        <TextBox x:Name ="Пароль" Grid.Row="5" MaxLength="30" TextAlignment="Center" 
-      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Width="400" Height="33"/>
+        <TextBox x:Name ="Пароль" Grid.Row="5" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
+      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Width="400" Height="33" Margin="18,19.6,18.8,19.4" Grid.ColumnSpan="2"/>
 
-        <Button x:Name="Enter" Content="Ввод" Grid.Row="10" FontSize="30" 
-                Width="200" Height="50" Click="Vvod" IsDefault="True" />
+        <Button x:Name="Enter" Content="Ввод" Grid.Row="6" FontSize="30" 
+                Width="200" Height="50" Click="Vvod" IsDefault="True" Margin="62,11.6,118.8,11.2" Grid.Column="1" />
 
     </Grid>
 </Window>
