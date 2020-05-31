@@ -19,7 +19,6 @@ namespace TSSP_V3
         {
             Day = _Day;
             Month = _Month;
-           
             ID_Teacher = _ID_Teacher;
             ID_Student = _ID_Student;
             Mark = _Mark;
