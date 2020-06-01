@@ -23,20 +23,29 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <TextBlock VerticalAlignment="Bottom" FontSize="30" Foreground="DarkGray" 
-        FontFamily="Arial" Grid.Row="0" HorizontalAlignment="Center" Margin="133,0,182.8,71.8" Grid.RowSpan="2" Grid.Column="1" Width="65">Имя</TextBlock>
+        <TextBlock VerticalAlignment="Center" FontSize="30" Foreground="DarkGray"   Text=" Имя"
+        FontFamily="Arial" Grid.Row="0" Margin="117,20,182.8,17.8" Grid.Column="1" RenderTransformOrigin="0.745,0.514">
+        </TextBlock>
 
         <TextBox x:Name ="Имя" Grid.Row="1" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
       FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Width="400" Height="33" Margin="18,19.2,18.8,19.8" Grid.ColumnSpan="2"/>
 
-        <TextBlock VerticalAlignment="Bottom" FontSize="30" Foreground="DarkGray" 
-        FontFamily="Arial" Grid.Row="2" HorizontalAlignment="Center" Margin="93,0,154.8,71.6" Grid.RowSpan="2" Grid.Column="1" Width="133">Фамилия</TextBlock>
+        <TextBlock VerticalAlignment="Center" FontSize="30" Foreground="DarkGray" Text=" Фамилия "
+        FontFamily="Arial" Grid.Row="2" HorizontalAlignment="Center"  Margin="85,21.2,149.8,14.6" Grid.Column="1" Width="146" Height="37" RenderTransformOrigin="0.607,0.538">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.161"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.239"/>
+                </TransformGroup>
+            </TextBlock.RenderTransform> Фамилия</TextBlock>
 
         <TextBox x:Name ="Фамилия" Grid.Row="3" MaxLength="30" TextAlignment="Center" Background="SkyBlue"
       FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Width="400" Height="33" Margin="18,19.4,18.8,19.6" Grid.ColumnSpan="2"/>
 
-        <TextBlock VerticalAlignment="Bottom" FontSize="30"   Foreground="DarkGray" 
-        FontFamily="Arial" Grid.Row="4" HorizontalAlignment="Center" Margin="111,0,158.8,0.4" Grid.Column="1" Width="111">Пароль</TextBlock>
+        <TextBlock VerticalAlignment="Center" FontSize="30"   Foreground="DarkGray" Text=" Пароль"
+        FontFamily="Arial" Grid.Row="4" HorizontalAlignment="Center" Margin="98,10.4,163.8,28.4" Grid.Column="1" Width="119"></TextBlock>
 
         <TextBox x:Name ="Пароль" Grid.Row="5" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
       FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Width="400" Height="33" Margin="18,19.6,18.8,19.4" Grid.ColumnSpan="2"/>
