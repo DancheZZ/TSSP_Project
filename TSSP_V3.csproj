@@ -61,7 +61,13 @@
       <DependentUpon>PARENTS.xaml</DependentUpon>
     </Compile>
     <Compile Include="student.cs" />
+    <Compile Include="STUDENT.xaml.cs">
+      <DependentUpon>STUDENT.xaml</DependentUpon>
+    </Compile>
     <Compile Include="teacher.cs" />
+    <Compile Include="TEACHER.xaml.cs">
+      <DependentUpon>TEACHER.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -76,6 +82,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="PARENTS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STUDENT.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TEACHER.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

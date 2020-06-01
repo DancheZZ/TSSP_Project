@@ -17,7 +17,7 @@ namespace TSSP_V3
         string Password; //пароль
         int ID_child; //ID ребенка
  public string NoteAboutChildren; //замечание о ребенке
-        parents(string F1,string F2,string N1, string N2, string P, int id_child)
+       public parents(string F1,string F2,string N1, string N2, string P, int id_child)
         {
             Family1 = F1;
             Name1 = N1;

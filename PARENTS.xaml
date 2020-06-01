@@ -15,7 +15,7 @@
         </Grid.RowDefinitions>
 
         <TextBlock  Name ="Marks" VerticalAlignment="Bottom" FontSize="30"   Foreground="Green" Text=" Информация не получена"
-        FontFamily="Arial" TextWrapping="Wrap" Grid.Row="0" HorizontalAlignment="Center" Margin="10,0,10,0.8" Width="402" Height="258">1</TextBlock>
+        FontFamily="Arial" TextWrapping="Wrap" Grid.Row="0" HorizontalAlignment="Center" Margin="10,0,10,0.8" Width="402" Height="258"></TextBlock>
 
         <Button x:Name="aaa" Content="Вывести оценки" Grid.Row="1" FontSize="30" Click="Showme" IsDefault="True" Margin="83,109.2,93,79.6" />
 

@@ -22,7 +22,7 @@ namespace TSSP_V3
         string Subject;
         int age;
 
-        teacher
+        public teacher
         (
             string _Family, 
             string _Name, 
