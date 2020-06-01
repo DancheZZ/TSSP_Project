@@ -9,8 +9,8 @@
         Title="Регистрация" HorizontalAlignment="Center" Height="534.307" Width="446.506">
     <Grid Margin="0,0,3.6,-0.4">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="56*"/>
-            <ColumnDefinition Width="381*"/>
+            <ColumnDefinition Width="58*"/>
+            <ColumnDefinition Width="379*"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
@@ -23,26 +23,34 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <TextBlock VerticalAlignment="Bottom" FontSize="30" Foreground="DarkGray" 
-        FontFamily="Arial" Grid.Row="0" HorizontalAlignment="Center" Margin="133,0,182.8,71.8" Grid.RowSpan="2" Grid.Column="1" Width="65">Имя</TextBlock>
+        <TextBlock VerticalAlignment="Center" FontSize="30" Foreground="DarkGray"   Text=" Имя"
+        FontFamily="Arial" Grid.Row="0" Margin="118.4,20,182.8,17.8" Grid.Column="1" RenderTransformOrigin="0.745,0.514" Height="35">
+        </TextBlock>
 
         <TextBox x:Name ="Имя" Grid.Row="1" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
-      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Width="400" Height="33" Margin="18,19.2,18.8,19.8" Grid.ColumnSpan="2"/>
+      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,19.2,18.8,19.8" Grid.ColumnSpan="2"/>
 
-        <TextBlock VerticalAlignment="Bottom" FontSize="30" Foreground="DarkGray" 
-        FontFamily="Arial" Grid.Row="2" HorizontalAlignment="Center" Margin="94,0,158.8,71.6" Grid.RowSpan="2" Grid.Column="1" Width="128">Фамилия</TextBlock>
+        <TextBlock VerticalAlignment="Center" FontSize="30" Foreground="DarkGray" Text=" Фамилия "
+        FontFamily="Arial" Grid.Row="2" HorizontalAlignment="Center"  Margin="82.4,21.2,150.8,14.6" Grid.Column="1" Width="146" Height="37" RenderTransformOrigin="0.607,0.538">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.161"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.239"/>
+                </TransformGroup>
+            </TextBlock.RenderTransform> Фамилия</TextBlock>
 
         <TextBox x:Name ="Фамилия" Grid.Row="3" MaxLength="30" TextAlignment="Center" Background="SkyBlue"
-      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Width="400" Height="33" Margin="18,19.4,18.8,19.6" Grid.ColumnSpan="2"/>
+      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,19.4,18.8,19.6" Grid.ColumnSpan="2"/>
 
-        <TextBlock VerticalAlignment="Bottom" FontSize="30"   Foreground="DarkGray" 
-        FontFamily="Arial" Grid.Row="4" HorizontalAlignment="Center" Margin="111,0,158.8,0.4" Grid.Column="1" Width="111">Пароль</TextBlock>
+        <TextBlock VerticalAlignment="Center" FontSize="30"   Foreground="DarkGray" Text=" Пароль"
+        FontFamily="Arial" Grid.Row="4" HorizontalAlignment="Center" Margin="95.4,10.4,164.8,28.4" Grid.Column="1" Width="119" Height="34"></TextBlock>
 
         <TextBox x:Name ="Пароль" Grid.Row="5" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
-      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Width="400" Height="33" Margin="18,19.6,18.8,19.4" Grid.ColumnSpan="2"/>
+      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,19.6,18.8,19.4" Grid.ColumnSpan="2"/>
 
-        <Button x:Name="Enter" Content="Ввод" Grid.Row="6" FontSize="30" 
-                Width="200" Height="50" Click="Vvod" IsDefault="True" Margin="62,11.6,118.8,11.2" Grid.Column="1" />
+        <Button x:Name="Enter" Content="Ввод" Grid.Row="6" FontSize="30" Click="Vvod" IsDefault="True" Margin="66.4,11.6,122.8,11.2" Grid.Column="1" />
 
     </Grid>
 </Window>

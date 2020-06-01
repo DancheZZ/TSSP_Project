@@ -9,7 +9,7 @@ namespace TSSP_V3
     class parents
     {
         public static int CountParents = 200;
-        int ID;
+       public int ID;
         string Family1;
         string Name1; //фамилия и имя первого родителя
         string Family2;
@@ -30,7 +30,35 @@ namespace TSSP_V3
             NoteAboutChildren = "Замечаний нет";
         }
 
-    public void TakeNote (string Note)
+        public string ReturnName1()
+        {
+            return Name1;
+        }
+
+        public string ReturnName2()
+        {
+            return Name2;
+        }
+
+        public string ReturnFamily1()
+        {
+            return Family1;
+        }
+
+        public string ReturnFamily2()
+        {
+            return Family2;
+        }
+
+        public string ReturnPassword()
+        {
+            return Password;
+        }
+
+
+
+
+        public void TakeNote (string Note)
     {
       NoteAboutChildren = Note;
     }

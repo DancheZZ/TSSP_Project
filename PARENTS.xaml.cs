@@ -10,27 +10,22 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace TSSP_V3
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для PARENTS.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PARENTS : Window
     {
-        public MainWindow()
+        public PARENTS()
         {
             InitializeComponent();
         }
-
-        private void Vvod(object sender, RoutedEventArgs e)
+        public void Showme(object sender, RoutedEventArgs e)
         {
-           
+            //этот метод выведет оценки ребенка
         }
-
-
-
     }
 }
