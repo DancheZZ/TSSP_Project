@@ -23,11 +23,35 @@ namespace TSSP_V3
         public MainWindow()
         {
             InitializeComponent();
+            Baza.RegistrUsers();
         }
 
         private void Vvod(object sender, RoutedEventArgs e)
         {
-           
+            if (Baza.Search(Имя.Text, Фамилия.Text, Пароль.Text) )
+            {
+                if (Baza.ID_Now>=100 && Baza.ID_Now<200)//открыть окно ученика
+                {
+                    STUDENT stud = new STUDENT();
+                    stud.Show();
+                }
+                if (Baza.ID_Now>=200 && Baza.ID_Now<300)//Открыть окно родителя
+                {
+                    PARENTS par = new PARENTS();
+                    par.Show();
+                }
+                if (Baza.ID_Now>=300)//Открыть окно учителя
+                {
+                    TEACHER teach = new TEACHER();
+                    teach.Show();
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Хорошая попытка, Васька!");
+            }
+
         }
 
 

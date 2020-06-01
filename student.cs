@@ -16,7 +16,7 @@ namespace TSSP_V3
         string Class;
         int ID_ClassRuk;
         public int ID;
-        student
+       public student
         (
         string _Family,
         string _Name,
