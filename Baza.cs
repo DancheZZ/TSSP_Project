@@ -14,7 +14,7 @@ namespace TSSP_V3
         static parents[] Rodoki = new parents[5];
         static student[] Detki = new student[5];
         static teacher[] Senseys = new teacher[5];
-        static day[] Days = new day[5];
+        static day[] Days = new day[5];//превратить в список(
         
 
         public static void  RegistrUsers()
@@ -84,7 +84,7 @@ namespace TSSP_V3
 
         public static int[] GetRemarksStudent(int ID_To_Seacrh)
         {
-            //для начала подсчитаем количетсво оценок
+            //для начала подсчитаем количество оценок
             int count = 0;
             foreach(day denki in Days)
             {
