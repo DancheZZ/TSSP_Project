@@ -13,8 +13,8 @@ namespace TSSP_V3
         string Name;
         string Password;
         char gender;
-        string Class;
-        int ID_ClassRuk;
+       public string Class;
+       public int ID_ClassRuk;
         public int ID;
        public student
         (
@@ -38,14 +38,15 @@ namespace TSSP_V3
         }
 
 
-        void ChangeClass(string NewClass)
+        void ChangeMyClass(string NewClass)
         {
             //Yeas
+            //получить объект своего учителя и вызвать у него метод для смены класса 
         }
 
-        void LookMarks()
+        public int[] LookMarks()
         {
-
+            return Baza.GetRemarksStudent(ID);
         }
 
         public string ReturnName()
