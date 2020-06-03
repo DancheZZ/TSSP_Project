@@ -64,14 +64,23 @@ namespace TSSP_V3
             return false;
         }
 
-        public static  parents GetParents(int ID)
+      
+
+        public static teacher GetTeacherObject()
         {
-            return Rodoki[ID];
+            return Senseys[ID_Now];
         }
 
+        public static student GetStudentObject()
+        {
+            return Detki[ID_Now];
+        }
 
+        public static parents GetParentsObject()
+        {
+            return Rodoki[ID_Now];
+        }
 
-      
 
     }
 }
