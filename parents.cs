@@ -62,11 +62,8 @@ namespace TSSP_V3
 
     public int[] Look() // сделать возвр. тип int[]
     {
-            return Baza.GetRemarksStudent(ID_child);
+        return Baza.GetRemarksStudent(ID_child);
     }
-
-
-
 
     }
 }
