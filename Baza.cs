@@ -91,6 +91,12 @@ namespace TSSP_V3
             }
 
             int[] remarks = new int[count];
+            int i = 0;
+            foreach(day denki in Days)
+            {
+                if (denki.ID_Student == ID_To_Seacrh)
+                    remarks[i++] = denki.Mark;
+            }
             return remarks;
 
         }
@@ -111,17 +117,29 @@ namespace TSSP_V3
             Rodoki[ID_Search].NoteAboutChildren = "Замечаний нет";
         }
 
-        public static void WriteNote(int ID_Parent, string TextNote)
+        public static bool WriteNote(string _Familiya, string _Name,int _ID_Teacher , string _TextNote)
         {
-            Rodoki[ID_Parent].NoteAboutChildren = TextNote;
+            foreach (parents Searching in Rodoki)
+            {
+                if (Searching.ReturnFamily1() == _Familiya && Searching.ReturnName1() == _Name)
+                {
+
+                    Searching.NoteAboutChildren = "Учитель " + Senseys[_ID_Teacher].ReturnFamily() + "Сообщает Вам:" + _TextNote;
+                    return true;
+                }
+            }       
+            return false; //возвращает правду если родитель найден и ложь в противном случае
         }
 
       
         public static void AddDay(int _Day, int _month, int _ID_Teacher, int _ID_Student, int _Mark)
         {
-
             Days.Add(new day(_Day,_month,_ID_Teacher,_ID_Student,_Mark));
         }
+
+        
+
+
 
     }
 }
