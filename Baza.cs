@@ -137,7 +137,11 @@ namespace TSSP_V3
             Days.Add(new day(_Day,_month,_ID_Teacher,_ID_Student,_Mark));
         }
 
-        
+        public static void ChangeClassStudent(int _ID_Student, string _NewClass)
+        {
+
+            Detki[_ID_Student].Class = _NewClass;
+        }
 
 
 
