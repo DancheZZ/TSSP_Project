@@ -139,7 +139,6 @@ namespace TSSP_V3
 
         public static void ChangeClassStudent(int _ID_Student, string _NewClass)
         {
-
             Detki[_ID_Student].Class = _NewClass;
         }
 
