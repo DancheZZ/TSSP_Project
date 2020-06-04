@@ -45,22 +45,23 @@ namespace TSSP_V3
  обработка запрсоса на смену класса
  записать замечение родителю про ребенка(вводятся Фамилия Имя родителя (1 из 2) и текст замечания)*/
 
-        public void AddDay() // параметры для создания дня
+        public void AddDay(int _Day, int _Month, int Mark) // параметры для создания дня
         {
-
+            Baza.AddDay(_Day,_Month,ID);
         }
         public bool ChangeClassStudent(string _OldClass, string _NewClass, int _ID_Student) // параметры для смены класса
         {
            if ( Baza.CountStudentsInClass(_OldClass)>10 && Baza.CountStudentsInClass(_NewClass)<35 )
             {
-
+                Baza.ChangeClassStudent(_ID_Student, _NewClass);
                 return true;
             }
             return false;
         }
 
-        public void WriteNote(string Name, string Familiya, string Note) //параметры для записки родителю
+        public void WriteNote(string _Name, string _Familiya, string _Note) //параметры для записки родителю
         {
+            Baza.WriteNote(_Familiya,_Name,ID,_Note);
             //параметры - имя фамилия родителя и запись ему
             //сделать типом bool 
         }
