@@ -41,14 +41,14 @@ namespace TSSP_V3
             CountTeachers++;//увеличиваем его на 1
         }
 
-        /*добавить день
- обработка запрсоса на смену класса
- записать замечение родителю про ребенка(вводятся Фамилия Имя родителя (1 из 2) и текст замечания)*/
+        
 
-        public void AddDay(int _Day, int _Month, int Mark) // параметры для создания дня
+
+        public void AddDay(string _Name, string _Familiya, int _Day, int _Month, int _Mark) // параметры для создания дня
         {
-            Baza.AddDay(_Day,_Month,ID);
+            Baza.AddDay(_Day, _Month, ID, _Familiya, _Name, _Mark);
         }
+
         public bool ChangeClassStudent(string _OldClass, string _NewClass, int _ID_Student) // параметры для смены класса
         {
            if ( Baza.CountStudentsInClass(_OldClass)>10 && Baza.CountStudentsInClass(_NewClass)<35 )
@@ -62,8 +62,6 @@ namespace TSSP_V3
         public void WriteNote(string _Name, string _Familiya, string _Note) //параметры для записки родителю
         {
             Baza.WriteNote(_Familiya,_Name,ID,_Note);
-            //параметры - имя фамилия родителя и запись ему
-            //сделать типом bool 
         }
 
         public string ReturnName()
