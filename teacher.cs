@@ -49,14 +49,15 @@ namespace TSSP_V3
         {
 
         }
-        public void ChangeClass() // параметры для смены класса
+        public void ChangeClass(string _OldClass, string _NewClass, int _ID_Student) // параметры для смены класса
         {
-
+            //в параметры вставить новый класс, старый класс, айди студента
         }
 
-        public void WriteNote() //параметры для записки родителю
+        public void WriteNote(string Name, string Familiya, string Note) //параметры для записки родителю
         {
-
+            //параметры - имя фамилия родителя и запись ему
+            //сделать типом bool 
         }
 
         public string ReturnName()

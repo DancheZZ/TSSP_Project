@@ -8,14 +8,21 @@ namespace TSSP_V3
 {
     class day
     {
-        int Day;
-        int Month;
-       
-        int ID_Teacher;
-        int ID_Student;
-        int Mark;
+        public int Day;
+        public int Month;
 
-        day(int _Day, int _Month, int _ID_Teacher, int _ID_Student, int _Mark)
+        public int ID_Teacher;
+        public int ID_Student;
+        public int Mark;
+
+     public day
+        (
+        int _Day, 
+        int _Month, 
+        int _ID_Teacher, 
+        int _ID_Student, 
+        int _Mark
+        )
         {
             Day = _Day;
             Month = _Month;
