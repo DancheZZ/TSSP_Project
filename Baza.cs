@@ -132,8 +132,16 @@ namespace TSSP_V3
         }
 
       
-        public static void AddDay(int _Day, int _month, int _ID_Teacher, int _ID_Student, int _Mark)
+        public static void AddDay(int _Day, int _month, int _ID_Teacher, string _Familiya, string _Name, int _Mark)
         {
+            int _ID_Student = 0;
+            foreach(student Stud in Detki)
+            {
+                if (Stud.ReturnFamily() == _Familiya && Stud.ReturnName() == _Name)
+                {
+                    _ID_Student = Stud.ID;
+                }
+            }
             Days.Add(new day(_Day,_month,_ID_Teacher,_ID_Student,_Mark));
         }
 
