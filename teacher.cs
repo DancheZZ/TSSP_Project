@@ -49,9 +49,14 @@ namespace TSSP_V3
         {
 
         }
-        public void ChangeClass(string _OldClass, string _NewClass, int _ID_Student) // параметры для смены класса
+        public bool ChangeClassStudent(string _OldClass, string _NewClass, int _ID_Student) // параметры для смены класса
         {
-            //в параметры вставить новый класс, старый класс, айди студента
+           if ( Baza.CountStudentsInClass(_OldClass)>10 && Baza.CountStudentsInClass(_NewClass)<35 )
+            {
+
+                return true;
+            }
+            return false;
         }
 
         public void WriteNote(string Name, string Familiya, string Note) //параметры для записки родителю
