@@ -14,8 +14,7 @@ namespace TSSP_V3
         static parents[] Rodoki = new parents[5];
         static student[] Detki = new student[5];
         static teacher[] Senseys = new teacher[5];
-        static day[] Days = new day[5];//превратить в список(
-        
+       static List<day> Days = new List<day>();
 
         public static void  RegistrUsers()
         {
@@ -115,6 +114,13 @@ namespace TSSP_V3
         public static void WriteNote(int ID_Parent, string TextNote)
         {
             Rodoki[ID_Parent].NoteAboutChildren = TextNote;
+        }
+
+      
+        public static void AddDay(int _Day, int _month, int _ID_Teacher, int _ID_Student, int _Mark)
+        {
+
+            Days.Add(new day(_Day,_month,_ID_Teacher,_ID_Student,_Mark));
         }
 
     }
