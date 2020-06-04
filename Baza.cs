@@ -117,11 +117,14 @@ namespace TSSP_V3
             Rodoki[ID_Search].NoteAboutChildren = "Замечаний нет";
         }
 
-        public static bool WriteNote(string _Familiya, string _Name,int _ID_Teacher , string _TextNote)
+        public static bool WriteNote(string _Familiya, string _Name, int _ID_Teacher, string _TextNote)
         {
             foreach (parents Searching in Rodoki)
             {
-                if (Searching.ReturnFamily1() == _Familiya && Searching.ReturnName1() == _Name)
+                if (Searching.ReturnFamily1() == _Familiya && Searching.ReturnName1() == _Name
+                    ||
+                    Searching.ReturnFamily2() == _Familiya && Searching.ReturnName2() == _Name
+                    )
                 {
 
                     Searching.NoteAboutChildren = "Учитель " + Senseys[_ID_Teacher].ReturnFamily() + "Сообщает Вам:" + _TextNote;
@@ -149,8 +152,5 @@ namespace TSSP_V3
         {
             Detki[_ID_Student].Class = _NewClass;
         }
-
-
-
     }
 }

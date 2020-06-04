@@ -60,9 +60,9 @@ namespace TSSP_V3
           NoteAboutChildren = Note;
         }
 
-    public void Look() // сделать возвр. тип int[]
+    public int[] Look() // сделать возвр. тип int[]
     {
-       
+            return Baza.GetRemarksStudent(ID_child);
     }
 
 
