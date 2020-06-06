@@ -21,7 +21,7 @@ namespace TSSP_V3
             Rodoki[0]= new parents("1", "1", "1", "1", "123", 100);
             Detki[0] = new student("2","2","2",'м',"9А",301);
             Senseys[0] = new teacher("3", "3", "3", "3", 30);
-            Days[0] = new day(5,9,1,1,5);
+            Days.Add(new day(5, 9, 300, 100, 5));
             // вбить сюда данные о 5 объектах каждого класса
         }
         public static bool Search(string Familiya,string Name, string Password )
@@ -38,10 +38,11 @@ namespace TSSP_V3
                     )
                 {
                     ID_Now = Rodoki[i].ID;
+                    
                     return true;
                 }
                 //вернуть проверку ниже
-                /* else
+                 else
    
                 if (Detki[i].ReturnFamily() == Familiya&&
                     Detki[i].ReturnName() == Name&&
@@ -58,7 +59,7 @@ namespace TSSP_V3
                     ID_Now = Senseys[i].ID;
                     return true;
                 }
-                */
+                
 
             }
             return false;
@@ -68,17 +69,33 @@ namespace TSSP_V3
 
         public static teacher GetTeacherObject(int ID_Search)
         {
-            return Senseys[ID_Search];
+            foreach (teacher teach in Senseys)
+            {
+                if (teach.ID == ID_Search)
+                    return teach;
+            }
+            return null;
         }
 
         public static student GetStudentObject(int ID_Search)
         {
-            return Detki[ID_Search];
+            foreach (student stud in Detki)
+            {
+                if (stud.ID == ID_Search)
+                    return stud;
+            }
+            return null;
+            
         }
 
         public static parents GetParentsObject(int ID_Search)
         {
-            return Rodoki[ID_Search];
+            foreach (parents Par in Rodoki)
+            {
+                if (Par.ID == ID_Search)
+                    return Par;
+            }
+            return null;
         }
 
         public static int[] GetRemarksStudent(int ID_To_Seacrh)

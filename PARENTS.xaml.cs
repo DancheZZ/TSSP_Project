@@ -19,13 +19,22 @@ namespace TSSP_V3
     /// </summary>
     public partial class PARENTS : Window
     {
+        parents MamkaPapka;
         public PARENTS()
         {
             InitializeComponent();
+            MamkaPapka = Baza.GetParentsObject(Baza.ID_Now);
         }
         public void Showme(object sender, RoutedEventArgs e)
         {
-            //этот метод выведет оценки ребенка
+            string s = "";
+            int[] ISeeMyChild = Baza.GetRemarksStudent(MamkaPapka.ID_child);
+
+            foreach(int i in ISeeMyChild)
+            {
+                s += i.ToString() + " ";
+            }
+            MessageBox.Show(s);
         }
     }
 }

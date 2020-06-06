@@ -49,8 +49,9 @@ namespace TSSP_V3
             }
             else
             {
-                MessageBox.Show("Хорошая попытка, Васька!");
+                MessageBox.Show("Введены неправильные данные!");
             }
+
 
         }
 

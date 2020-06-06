@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TSSP_V3"
         mc:Ignorable="d"
-        Title="TEACHER" Height="450" Width="800">
+        Title="TEACHER" Height="545.422" Width="451.928">
     <Grid>
         
     </Grid>

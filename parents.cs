@@ -15,7 +15,7 @@ namespace TSSP_V3
         string Family2;
         string Name2;// фамилия и имя второго родителя
         string Password; //пароль
-        int ID_child; //ID ребенка
+       public int ID_child; //ID ребенка
         public string NoteAboutChildren; //замечание о ребенке
        public parents(string F1,string F2,string N1, string N2, string P, int id_child)
         {
