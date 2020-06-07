@@ -15,15 +15,13 @@ using System.Windows.Shapes;
 namespace TSSP_V3
 {
     /// <summary>
-    /// Логика взаимодействия для TEACHER.xaml
+    /// Логика взаимодействия для TeacherAddNote1.xaml
     /// </summary>
-    public partial class TEACHER : Window
+    public partial class TeacherAddNote1 : Window
     {
-        public TEACHER()
+        public TeacherAddNote1()
         {
             InitializeComponent();
         }
-
-        public void Ozenki()
     }
 }

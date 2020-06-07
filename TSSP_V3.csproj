@@ -68,6 +68,12 @@
     <Compile Include="TEACHER.xaml.cs">
       <DependentUpon>TEACHER.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TeacherAddDay.xaml.cs">
+      <DependentUpon>TeacherAddDay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherAddNote1.xaml.cs">
+      <DependentUpon>TeacherAddNote1.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -90,6 +96,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TEACHER.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TeacherAddDay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TeacherAddNote1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

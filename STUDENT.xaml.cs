@@ -19,9 +19,37 @@ namespace TSSP_V3
     /// </summary>
     public partial class STUDENT : Window
     {
+        student detka = null;
         public STUDENT()
         {
+            detka = Baza.GetStudentObject(Baza.ID_Now);
             InitializeComponent();
+            Новый_Класс.Text = detka.Class;
         }
+
+        public void Zapros(object sender, RoutedEventArgs e)
+        {
+            string Result;
+            if (teacher.ChangeClassStudent(detka.Class, Новый_Класс.Text, detka.ID))
+            {
+                Result = "Успешно!";
+            }
+            else
+                Result = "Вы не можете изменить класс!";
+            MessageBox.Show(Result);
+        }
+
+        public void Ozenki(object sender, RoutedEventArgs e)
+        {
+            int[] Palb = Baza.GetRemarksStudent(detka.ID);
+            
+            string Smotri = "";
+            foreach(int i in Palb)
+            {
+                Smotri += i.ToString() + " ";
+            }
+            MessageBox.Show(Smotri);
+        }
+
     }
 }

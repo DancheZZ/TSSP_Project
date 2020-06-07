@@ -121,11 +121,11 @@ namespace TSSP_V3
         public static int CountStudentsInClass(string NameClass)
         {
             int count = 0;
-            foreach (student stud in Detki )
-            {
-                if (stud.Class == NameClass) count++;
-
-            }
+          //  foreach (student stud in Detki )
+           // {
+          //     if (stud.Class == NameClass && stud!=null) count++;
+//
+         //   }
             return count;
         }
 
@@ -167,6 +167,11 @@ namespace TSSP_V3
 
         public static void ChangeClassStudent(int _ID_Student, string _NewClass)
         {
+            foreach (student stud in Detki)
+            {
+                if (stud.ID == _ID_Student)
+                    stud.Class = _NewClass;
+            }
             Detki[_ID_Student].Class = _NewClass;
         }
     }

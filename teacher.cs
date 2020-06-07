@@ -15,7 +15,7 @@ namespace TSSP_V3
      Возраст
      Предмет */
         public static int CountTeachers = 300;
-    public int ID;
+        public int ID;
         string Family;
         string Name;
         string Password;
@@ -49,7 +49,7 @@ namespace TSSP_V3
             Baza.AddDay(_Day, _Month, ID, _Familiya, _Name, _Mark);
         }
 
-        public bool ChangeClassStudent(string _OldClass, string _NewClass, int _ID_Student) // параметры для смены класса
+        public static bool ChangeClassStudent(string _OldClass, string _NewClass, int _ID_Student) // параметры для смены класса
         {
            if ( Baza.CountStudentsInClass(_OldClass)>10 && Baza.CountStudentsInClass(_NewClass)<35 )
             {

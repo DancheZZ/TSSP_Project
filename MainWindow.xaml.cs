@@ -34,16 +34,19 @@ namespace TSSP_V3
                 {
                     STUDENT stud = new STUDENT();
                     stud.Show();
+                    this.Close();
                 }
                 if (Baza.ID_Now>=200 && Baza.ID_Now<300)//Открыть окно родителя
                 {
                     PARENTS par = new PARENTS();
                     par.Show();
+                    this.Close();
                 }
                 if (Baza.ID_Now>=300)//Открыть окно учителя
                 {
                     TEACHER teach = new TEACHER();
                     teach.Show();
+                    this.Close();
                 }
 
             }

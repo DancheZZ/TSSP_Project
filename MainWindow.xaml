@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:TSSP_V3"
         mc:Ignorable="d"
         Background="DarkRed"
+        WindowStartupLocation="CenterScreen"
         Title="Регистрация" HorizontalAlignment="Center" Height="534.307" Width="446.506">
     <Grid Margin="0,0,3.6,-0.4">
         <Grid.ColumnDefinitions>

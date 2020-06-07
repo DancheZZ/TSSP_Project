@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TSSP_V3"
         mc:Ignorable="d"
-        Title="TEACHER" Height="545.422" Width="451.928">
+        Background="LightGreen"
+        WindowStartupLocation="CenterScreen"
+        Title="TeacherMenu" Height="545.422" Width="451.928">
     <Grid>
-        
+        <Grid.RowDefinitions>
+
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <Button x:Name="aaa" Content="Добавить день" Grid.Row="0" FontSize="30" Click="Ozenki" IsDefault="True" Margin="83,109.2,93,79.6" 
+                Background="SkyBlue"/>
+
+        <Button x:Name="bbb" Content="Написать замечание" Grid.Row="1" FontSize="30" Click="GoNote" IsDefault="True" Margin="53,108.8,66.6,79.6" 
+                Background="SkyBlue"/>
+
     </Grid>
 </Window>

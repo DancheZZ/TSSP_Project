@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TSSP_V3"
         mc:Ignorable="d"
-        Title="STUDENT" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Background="WhiteSmoke"
+        Title="STUDENT" Height="450" Width="374">
     <Grid>
+        <Grid.RowDefinitions>
+
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
         
+        <TextBlock  Name ="Marks" VerticalAlignment="Center" FontSize="30"   Foreground="Green" Text=" Сменить класс"
+        FontFamily="Arial" TextWrapping="Wrap" Grid.Row="0" HorizontalAlignment="Stretch"  Margin="71.5,51,71.5,105.2" Height="55" Grid.RowSpan="2" RenderTransformOrigin="0.469,0.51"/>
+        
+        <TextBox x:Name ="Новый_Класс" Grid.Row="1" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
+      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,19.2,18.8,19.8" Grid.ColumnSpan="2"/>
+        
+        <Button x:Name="Запрос" Content="Запрос" Grid.Row="2" FontSize="30" Click="Zapros" IsDefault="True" Margin="95,9.8,95,12.8" />
+
+        <Button x:Name="Оценки" Content="Оценки" Grid.Row="3" FontSize="30" Click="Ozenki" IsDefault="True" Margin="113,10.2,114,12.6" />
+
     </Grid>
 </Window>

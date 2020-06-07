@@ -15,15 +15,13 @@ using System.Windows.Shapes;
 namespace TSSP_V3
 {
     /// <summary>
-    /// Логика взаимодействия для TEACHER.xaml
+    /// Логика взаимодействия для TeacherAddDay.xaml
     /// </summary>
-    public partial class TEACHER : Window
+    public partial class TeacherAddDay : Window
     {
-        public TEACHER()
+        public TeacherAddDay()
         {
             InitializeComponent();
         }
-
-        public void Ozenki()
     }
 }

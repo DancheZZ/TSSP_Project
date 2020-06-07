@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:TSSP_V3"
         mc:Ignorable="d"
         Background="WhiteSmoke"
+          WindowStartupLocation="CenterScreen"
         Title="PARENTS" Height="565.886" Width="435.786">
     <Grid HorizontalAlignment="Left" Margin="0,0,-0.4,-0.4" Width="422">
         <Grid.RowDefinitions>
