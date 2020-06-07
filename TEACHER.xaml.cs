@@ -24,6 +24,16 @@ namespace TSSP_V3
             InitializeComponent();
         }
 
-        public void Ozenki()
+        public void Ozenki(object sender, RoutedEventArgs e)
+        {
+            TeacherAddDay DayGo = new TeacherAddDay();
+            DayGo.Show();
+        }
+
+        public void GoNote(object sender, RoutedEventArgs e)
+        {
+            TeacherAddNote1 NoteGo = new TeacherAddNote1();
+            NoteGo.Show();
+        }
     }
 }

@@ -5,8 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TSSP_V3"
         mc:Ignorable="d"
-        Title="TeacherAddDay" Height="450" Width="800">
-    <Grid>
-        
+        Title="TeacherAddDay" Height="600" Width="422.809">
+    <Grid Margin="0,0,3.8,1.6">
+        <Grid.RowDefinitions>
+
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <TextBlock VerticalAlignment="Center" FontSize="30" Foreground="DarkGray"   Text="Фамилия"
+        FontFamily="Arial" Grid.Row="0" Margin="129,23,130.6,20.4" RenderTransformOrigin="0.745,0.514" Height="35"/>
+
+        <TextBox x:Name ="Имя" Grid.Row="1" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
+      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,19.2,18.8,19.8" Grid.ColumnSpan="2"/>
+
+        <TextBlock VerticalAlignment="Center" FontSize="30" Foreground="DarkGray"   Text="Оценка"
+        FontFamily="Arial" Grid.Row="4" Margin="76,21.6,70.6,21.8" RenderTransformOrigin="0.745,0.514" Height="35"/>
+
+        <TextBox x:Name ="Фамилия" Grid.Row="3" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
+      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,19.2,18.8,19.8" Grid.ColumnSpan="2"/>
+
+        <TextBlock VerticalAlignment="Center" FontSize="30" Foreground="DarkGray"   Text="Имя"
+        FontFamily="Arial" Grid.Row="2" Margin="174,22.6,174,9.6" RenderTransformOrigin="0.596,0.527" Height="35"/>
+
+        <TextBox x:Name ="Запись" Grid.Row="5" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
+      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,19.2,18.8,19.8" Grid.ColumnSpan="2"/>
+
+        <TextBox x:Name ="День" Grid.Row="6" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
+      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,19.2,18.8,19.8" Grid.ColumnSpan="2" Text=" День "/>
+
+        <TextBox x:Name ="Месяц" Grid.Row="7" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
+      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,19.2,18.8,19.8" Grid.ColumnSpan="2" Text=" Месяц"/>
+
     </Grid>
 </Window>
