@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace TSSP_V3
 {
@@ -136,6 +138,13 @@ namespace TSSP_V3
 
         public static bool WriteNote(string _Familiya, string _Name, int _ID_Teacher, string _TextNote)
         {
+          /*  int ID_teach = 0;
+            
+            foreach (teacher teach in Senseys)
+            {
+                if (teach.ID == ID_Now) ID_teach = teach.ID;
+            }
+            */
             foreach (parents Searching in Rodoki)
             {
                 if (Searching.ReturnFamily1() == _Familiya && Searching.ReturnName1() == _Name
@@ -144,7 +153,7 @@ namespace TSSP_V3
                     )
                 {
 
-                    Searching.NoteAboutChildren = "Учитель " + Senseys[_ID_Teacher].ReturnFamily() + "Сообщает Вам:" + _TextNote;
+                    Searching.NoteAboutChildren = "Учитель " + GetTeacherObject( ID_Now).ReturnFamily() + "Сообщает Вам:" + _TextNote;
                     return true;
                 }
             }       
@@ -163,6 +172,7 @@ namespace TSSP_V3
                     _ID_Student = Stud.ID;
                 }
             }
+            if (_ID_Student!=0)
             Days.Add(new day(_Day,_month,_ID_Teacher,_ID_Student,_Mark));
 
         }

@@ -23,7 +23,9 @@ namespace TSSP_V3
         public TeacherAddNote1()
         {
             Teacher = Baza.GetTeacherObject(Baza.ID_Now);
+
             InitializeComponent();
+            MessageBox.Show(Teacher.ID.ToString());
         }
         private void Vvod(object sender, RoutedEventArgs e)
         {
