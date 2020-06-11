@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TSSP_V3
 {
+    [Serializable]
     class student
     {
         public static int CountStudent = 100;
