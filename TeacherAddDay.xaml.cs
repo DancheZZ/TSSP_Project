@@ -19,6 +19,7 @@ namespace TSSP_V3
     /// </summary>
     public partial class TeacherAddDay : Window
     {
+       
         teacher Teacher;
         public TeacherAddDay()
         {
@@ -28,7 +29,7 @@ namespace TSSP_V3
 
         private void Vvod(object sender, RoutedEventArgs e)
         {
-
+            Teacher.AddDay(Teacher.ReturnName(),Teacher.ReturnFamily(), int.Parse(День.Text), int.Parse(Месяц.Text),int.Parse(Оценка.Text) );
         }
     }
 }

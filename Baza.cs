@@ -14,7 +14,7 @@ namespace TSSP_V3
         static parents[] Rodoki = new parents[5];
         static student[] Detki = new student[5];
         static teacher[] Senseys = new teacher[5];
-       static List<day> Days = new List<day>();
+        static List<day> Days = new List<day>();
 
         public static void  RegistrUsers()
         {
@@ -154,6 +154,7 @@ namespace TSSP_V3
       
         public static void AddDay(int _Day, int _month, int _ID_Teacher, string _Familiya, string _Name, int _Mark)
         {
+
             int _ID_Student = 0;
             foreach(student Stud in Detki)
             {
@@ -163,6 +164,7 @@ namespace TSSP_V3
                 }
             }
             Days.Add(new day(_Day,_month,_ID_Teacher,_ID_Student,_Mark));
+
         }
 
         public static void ChangeClassStudent(int _ID_Student, string _NewClass)

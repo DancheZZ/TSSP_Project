@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TSSP_V3
 {
+    [Serializable]
     class teacher
     {
         /*    ID
@@ -55,7 +56,6 @@ namespace TSSP_V3
             {
                 Baza.ChangeClassStudent(_ID_Student, _NewClass);
                 return true;
-           
             }
             return false;
         }

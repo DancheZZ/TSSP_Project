@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TSSP_V3
 {
+    [Serializable]
     class parents
     {
         public static int CountParents = 200;

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TSSP_V3
 {
+    [Serializable]
     class day
     {
         public int Day;

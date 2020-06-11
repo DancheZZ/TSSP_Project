@@ -35,14 +35,14 @@
         <TextBlock VerticalAlignment="Center" FontSize="30" Foreground="DarkGray"   Text="Имя"
         FontFamily="Arial" Grid.Row="2" Margin="174,36.6,174,70.8" RenderTransformOrigin="0.596,0.527" Height="35" Grid.RowSpan="2"/>
 
-        <TextBox x:Name ="Запись" Grid.Row="5" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
+        <TextBox x:Name ="Оценка" Grid.Row="5" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
       FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,19,19,10"/>
 
         <TextBox x:Name ="День" Grid.Row="6" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
-      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,19,19,10.2" Text=" День "/>
+      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,19,19,10.2" Text=" День " Foreground="Green"/>
 
         <TextBox x:Name ="Месяц" Grid.Row="7" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
-      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,18.8,19,10.2" Text=" Месяц"/>
+      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,18.8,19,10.2" Text=" Месяц" Foreground="Green"/>
 
         <Button x:Name="Enter" Content="Ввод" Grid.Row="8" FontSize="30" Click="Vvod" IsDefault="True" Margin="94,9.8,95,12.4" />
 

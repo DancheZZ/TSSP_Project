@@ -19,9 +19,16 @@ namespace TSSP_V3
     /// </summary>
     public partial class TeacherAddNote1 : Window
     {
+        teacher Teacher;
         public TeacherAddNote1()
         {
+            Teacher = Baza.GetTeacherObject(Baza.ID_Now);
             InitializeComponent();
         }
+        private void Vvod(object sender, RoutedEventArgs e)
+        {
+            Teacher.WriteNote(Имя.Text, Фамилия.Text,Запись.Text);
+        }
+
     }
 }
