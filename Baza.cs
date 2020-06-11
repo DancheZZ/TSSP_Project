@@ -10,9 +10,13 @@ namespace TSSP_V3
 {
     static class Baza
     {
+        static BinaryFormatter formatter = new BinaryFormatter();
+        static string DaysFile = "days.data";
+        static string ParentsFile = "parents.data";
+        static string SenseysFile = "teacher.data";
+
         public static int ID_Now = 0;
-     
-        
+       
         static parents[] Rodoki = new parents[5];
         static student[] Detki = new student[5];
         static teacher[] Senseys = new teacher[5];
@@ -40,9 +44,15 @@ namespace TSSP_V3
             Senseys[3] = new teacher("Дубовая", "Елена", "33", "История", 56);
             Senseys[4] = new teacher("Скороход", "Игнат", "34", "Русский", 67);
 
-            Days.Add(new day(5, 9, 300, 100, 5));
-            // вбить сюда данные о 5 объектах каждого класса
-        }
+           // Days.Add(new day(5, 9, 300, 100, 5));
+
+            // считывание дней из файла
+            using (FileStream fs = new FileStream(DaysFile, FileMode.OpenOrCreate))
+            {
+                Days = (List<day>)formatter.Deserialize(fs);
+            }
+                
+            }
         public static bool Search(string Familiya,string Name, string Password )
         {
             for (int i=0; i<5; i++)
@@ -171,7 +181,7 @@ namespace TSSP_V3
         }
 
       
-        public static void AddDay(int _Day, int _month, int _ID_Teacher, string _Familiya, string _Name, int _Mark)
+        public static bool AddDay(int _Day, int _month, int _ID_Teacher, string _Familiya, string _Name, int _Mark)
         {
 
             int _ID_Student = 0;
@@ -182,9 +192,17 @@ namespace TSSP_V3
                     _ID_Student = Stud.ID;
                 }
             }
-            if (_ID_Student!=0)
-            Days.Add(new day(_Day,_month,_ID_Teacher,_ID_Student,_Mark));
-
+            if (_ID_Student != 0)
+            {
+                Days.Add(new day(_Day, _month, _ID_Teacher, _ID_Student, _Mark));
+                Saveinfo();
+                return true;
+            }
+            else
+            {
+                Saveinfo();
+                return false;
+            }
         }
 
         public static void ChangeClassStudent(int _ID_Student, string _NewClass)
@@ -195,6 +213,24 @@ namespace TSSP_V3
                     stud.Class = _NewClass;
             }
             Detki[_ID_Student].Class = _NewClass;
+        }
+
+        public static void Saveinfo()
+        {
+            
+            using (FileStream fs = new FileStream(DaysFile, FileMode.OpenOrCreate))
+            {
+                // сериализуем весь массив 
+                formatter.Serialize(fs, Days);
+            }
+
+            using (FileStream fs = new FileStream(ParentsFile, FileMode.OpenOrCreate))
+            {
+                // сериализуем весь массив 
+                formatter.Serialize(fs, Rodoki);
+            }
+
+
         }
     }
 }

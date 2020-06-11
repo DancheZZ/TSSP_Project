@@ -22,6 +22,7 @@ namespace TSSP_V3
         public TEACHER()
         {
             InitializeComponent();
+            this.Closed += Exit;
         }
 
         public void Ozenki(object sender, RoutedEventArgs e)
@@ -35,5 +36,12 @@ namespace TSSP_V3
             TeacherAddNote1 NoteGo = new TeacherAddNote1();
             NoteGo.Show();
         }
+
+        public void Exit(object sender, EventArgs e)
+        {
+            Baza.Saveinfo();
+            MessageBox.Show("yyyesss");
+        }
+
     }
 }

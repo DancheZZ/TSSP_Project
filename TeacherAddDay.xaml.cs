@@ -25,11 +25,22 @@ namespace TSSP_V3
         {
             Teacher = Baza.GetTeacherObject(Baza.ID_Now);
             InitializeComponent();
+          //  this.Closing += Exit;
+            this.Closed += Exit;
         }
 
         private void Vvod(object sender, RoutedEventArgs e)
         {
-            Teacher.AddDay(Фамилия.Text,Фамилия.Text, int.Parse(День.Text), int.Parse(Месяц.Text),int.Parse(Оценка.Text) );
+            if (!Teacher.AddDay(Имя.Text, Фамилия.Text, int.Parse(День.Text), int.Parse(Месяц.Text), int.Parse(Оценка.Text)))
+            {
+                MessageBox.Show("NO");
+            }
+        }
+
+        public void Exit(object sender, EventArgs e)
+        {
+            Baza.Saveinfo();
+            MessageBox.Show("yyyesss");
         }
     }
 }

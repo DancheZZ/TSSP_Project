@@ -45,9 +45,9 @@ namespace TSSP_V3
         
 
 
-        public void AddDay(string _Name, string _Familiya, int _Day, int _Month, int _Mark) // параметры для создания дня
+        public bool AddDay(string _Name, string _Familiya, int _Day, int _Month, int _Mark) // параметры для создания дня
         {
-            Baza.AddDay(_Day, _Month, ID, _Familiya, _Name, _Mark);
+            return Baza.AddDay(_Day, _Month, ID, _Familiya, _Name, _Mark);
         }
 
         public static bool ChangeClassStudent(string _OldClass, string _NewClass, int _ID_Student) // параметры для смены класса
