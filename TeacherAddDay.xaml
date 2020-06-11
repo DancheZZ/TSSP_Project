@@ -17,32 +17,34 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
-
+            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
         <TextBlock VerticalAlignment="Center" FontSize="30" Foreground="DarkGray"   Text="Фамилия"
-        FontFamily="Arial" Grid.Row="0" Margin="129,23,130.6,20.4" RenderTransformOrigin="0.745,0.514" Height="35"/>
+        FontFamily="Arial" Grid.Row="0" Margin="141,36,141,0.2" RenderTransformOrigin="0.745,0.514" Height="35"/>
 
         <TextBox x:Name ="Имя" Grid.Row="1" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
-      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,19.2,18.8,19.8" Grid.ColumnSpan="2"/>
+      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,18.8,19,10.4"/>
 
         <TextBlock VerticalAlignment="Center" FontSize="30" Foreground="DarkGray"   Text="Оценка"
-        FontFamily="Arial" Grid.Row="4" Margin="76,21.6,70.6,21.8" RenderTransformOrigin="0.745,0.514" Height="35"/>
+        FontFamily="Arial" Grid.Row="4" Margin="156,36.2,156,0" RenderTransformOrigin="0.745,0.514" Height="35"/>
 
         <TextBox x:Name ="Фамилия" Grid.Row="3" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
-      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,19.2,18.8,19.8" Grid.ColumnSpan="2"/>
+      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,19.4,19,9.8"/>
 
         <TextBlock VerticalAlignment="Center" FontSize="30" Foreground="DarkGray"   Text="Имя"
-        FontFamily="Arial" Grid.Row="2" Margin="174,22.6,174,9.6" RenderTransformOrigin="0.596,0.527" Height="35"/>
+        FontFamily="Arial" Grid.Row="2" Margin="174,36.6,174,70.8" RenderTransformOrigin="0.596,0.527" Height="35" Grid.RowSpan="2"/>
 
         <TextBox x:Name ="Запись" Grid.Row="5" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
-      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,19.2,18.8,19.8" Grid.ColumnSpan="2"/>
+      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,19,19,10"/>
 
         <TextBox x:Name ="День" Grid.Row="6" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
-      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,19.2,18.8,19.8" Grid.ColumnSpan="2" Text=" День "/>
+      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,19,19,10.2" Text=" День "/>
 
         <TextBox x:Name ="Месяц" Grid.Row="7" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
-      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,19.2,18.8,19.8" Grid.ColumnSpan="2" Text=" Месяц"/>
+      FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,18.8,19,10.2" Text=" Месяц"/>
+
+        <Button x:Name="Enter" Content="Ввод" Grid.Row="8" FontSize="30" Click="Vvod" IsDefault="True" Margin="94,9.8,95,12.4" />
 
     </Grid>
 </Window>

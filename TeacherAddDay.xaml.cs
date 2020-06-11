@@ -19,9 +19,16 @@ namespace TSSP_V3
     /// </summary>
     public partial class TeacherAddDay : Window
     {
+        teacher Teacher;
         public TeacherAddDay()
         {
+            Teacher = Baza.GetTeacherObject(Baza.ID_Now);
             InitializeComponent();
+        }
+
+        private void Vvod(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
