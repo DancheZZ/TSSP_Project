@@ -40,7 +40,6 @@ namespace TSSP_V3
         public void Exit(object sender, EventArgs e)
         {
             Baza.Saveinfo();
-            MessageBox.Show("yyyesss");
         }
 
     }

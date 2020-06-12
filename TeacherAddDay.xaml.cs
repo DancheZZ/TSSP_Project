@@ -33,14 +33,13 @@ namespace TSSP_V3
         {
             if (!Teacher.AddDay(Имя.Text, Фамилия.Text, int.Parse(День.Text), int.Parse(Месяц.Text), int.Parse(Оценка.Text)))
             {
-                MessageBox.Show("NO");
+                MessageBox.Show("Запись неудачна!");
             }
         }
 
         public void Exit(object sender, EventArgs e)
         {
             Baza.Saveinfo();
-            MessageBox.Show("yyyesss");
         }
     }
 }

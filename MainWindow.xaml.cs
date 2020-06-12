@@ -28,7 +28,7 @@ namespace TSSP_V3
 
         private void Vvod(object sender, RoutedEventArgs e)
         {
-            if (Baza.Search(Имя.Text, Фамилия.Text, Пароль.Text) )
+            if (Baza.Search( Фамилия.Text, Имя.Text, Пароль.Text) )
             {
                 if (Baza.ID_Now>=100 && Baza.ID_Now<200)//открыть окно ученика
                 {

@@ -60,9 +60,9 @@ namespace TSSP_V3
             return false;
         }
 
-        public void WriteNote(string _Name, string _Familiya, string _Note) //параметры для записки родителю
+        public bool WriteNote(string _Name, string _Familiya, string _Note) //параметры для записки родителю
         {
-            Baza.WriteNote(_Familiya,_Name,ID,_Note);
+           return Baza.WriteNote(_Familiya,_Name,ID,_Note);
         }
 
         public string ReturnName()

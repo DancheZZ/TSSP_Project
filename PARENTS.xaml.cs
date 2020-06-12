@@ -24,6 +24,7 @@ namespace TSSP_V3
         {
             InitializeComponent();
             MamkaPapka = Baza.GetParentsObject(Baza.ID_Now);
+            Marks.Text = MamkaPapka.NoteAboutChildren;
         }
         public void Showme(object sender, RoutedEventArgs e)
         {

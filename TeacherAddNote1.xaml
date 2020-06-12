@@ -20,13 +20,13 @@
         <TextBlock VerticalAlignment="Center" FontSize="30" Foreground="DarkGray"   Text="Фамилия"
         FontFamily="Arial" Grid.Row="0" Margin="129,23,130.6,20.4" RenderTransformOrigin="0.745,0.514" Height="35"/>
 
-        <TextBox x:Name ="Имя" Grid.Row="1" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
+        <TextBox x:Name ="Фамилия" Grid.Row="1" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
       FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,19.2,18.8,19.8" Grid.ColumnSpan="2"/>
 
         <TextBlock VerticalAlignment="Center" FontSize="30" Foreground="DarkGray"   Text="Текст замечания"
         FontFamily="Arial" Grid.Row="4" Margin="76,21.6,70.6,21.8" RenderTransformOrigin="0.745,0.514" Height="35"/>
 
-        <TextBox x:Name ="Фамилия" Grid.Row="3" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
+        <TextBox x:Name ="Имя" Grid.Row="3" MaxLength="30" TextAlignment="Center" Background="SkyBlue" 
       FontSize="20" FontFamily="Arial" TextWrapping="Wrap" Margin="18,19.2,18.8,19.8" Grid.ColumnSpan="2"/>
 
         <TextBlock VerticalAlignment="Center" FontSize="30" Foreground="DarkGray"   Text="Имя"

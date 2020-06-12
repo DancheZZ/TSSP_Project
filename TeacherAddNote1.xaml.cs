@@ -25,11 +25,21 @@ namespace TSSP_V3
             Teacher = Baza.GetTeacherObject(Baza.ID_Now);
 
             InitializeComponent();
-            MessageBox.Show(Teacher.ID.ToString());
+            this.Closed += Exit;
+
         }
         private void Vvod(object sender, RoutedEventArgs e)
         {
-            Teacher.WriteNote(Имя.Text, Фамилия.Text,Запись.Text);
+          if (!Teacher.WriteNote(Имя.Text, Фамилия.Text,Запись.Text) )
+            {
+                MessageBox.Show("NOOO");
+            }
+        }
+
+        public void Exit(object sender, EventArgs e)
+        {
+            Baza.Saveinfo();
+            MessageBox.Show("Yes");
         }
 
     }
